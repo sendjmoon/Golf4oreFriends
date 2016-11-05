@@ -1,7 +1,7 @@
 'use strict';
 
 const webpack = require('webpack');
-const ExtractText = require('extract-webpack-text-plugin');
+const ExtractText = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 // const API_URL = ''
@@ -28,7 +28,7 @@ module.exports = {
     loaders: [
       {
         test: /\.scss$/,
-        loader: ExtractText.plugin('style', 'css!postcss!sass!')
+        loader: ExtractText.extract('style', 'css!postcss!sass!')
       },
       {
         test: /\.html$/,
