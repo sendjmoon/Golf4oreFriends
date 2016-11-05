@@ -24,24 +24,24 @@ module.exports = {
   sassLoader: {
     includePaths: [`${__dirname}/app/scss/lib`]
   },
-  modules: {
+  module: {
     loaders: [
       {
         test: /\.scss$/,
         loader: ExtractText.extract('style', 'css!postcss!sass!')
       },
       {
-        test: /\.html$/,
-        loader: 'html',
-        exclude: '/node_modules/'
-      },
-      {
         test: /\.js$/,
         loader: 'babel',
-        exclude: '/node_modules/',
+        exclude: /node_modules/,
         query: {
           presets: ['es2015']
         }
+      },
+      {
+        test: /\.html$/,
+        loader: 'html',
+        exclude: '/node_modules'
       }
     ]
   }
