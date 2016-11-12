@@ -1,6 +1,6 @@
 'use strict';
 
-const webpack = require('webpack');
+// const webpack = require('webpack');
 const ExtractText = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
