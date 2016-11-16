@@ -23,11 +23,17 @@
 }
 
 .navbar-link:hover {
-  color: $link-primary-color-hover;
+  color: $link-primary-color;
   font-weight: bold;
   text-decoration: none;
 }
 
 .navbar-button {
   color: $nav-font-primary-color;
+}
+
+.link-menu li p {
+  margin: 4px 0 6px 0;
+  color: orange;
+  font-weight: bold;
 }
