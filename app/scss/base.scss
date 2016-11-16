@@ -19,3 +19,9 @@ html, body {
 nav {
   background-color: $nav-bg-primary-color;
 }
+
+@media (max-width: 1064px) {
+  html, body {
+    background-size: 1064px;
+  }
+}
