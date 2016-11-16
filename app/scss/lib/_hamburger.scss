@@ -1,0 +1,106 @@
+.ham-menu {
+  height: 40px;
+  width: 40px;
+  margin: 51px 0 0 15px;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $nav-bg-primary-color;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  color: rgba(254, 172, 0, 1.0);
+}
+
+.ham-menu:hover {
+  background-color: $nav-bg-secondary-color;
+}
+
+.ham-menu input {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.bar {
+  width: 20px;
+  height: 2px;
+  margin: 2px 0;
+  display: block;
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+.ham-menu div:first-child {
+  transform-origin: 0% 0%;
+}
+
+.ham-menu div:nth-last-child(2) {
+  transform: 0% 100%;
+}
+
+.ham-menu input:checked ~ div {
+  opacity: 1;
+  transform: rotate(45deg) translate(2px, 0px);
+}
+
+.ham-menu input:checked ~ div:nth-last-child(4) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.ham-menu input:checked ~ div:nth-last-child(3) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(1px, -2px);
+}
+
+.ham-menu input:checked ~ div p {
+  opacity: 0;
+}
+
+.ham-menu-text {
+  font-size: 9px;
+  height: 9px;
+  margin: 0px 0 0 0;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.link-menu {
+  width: 219px;
+  margin: 69px 0 0 129px;
+  padding: 10px;
+  padding-top: 2px;
+  position: absolute;
+  background-color: $nav-bg-primary-color;
+  list-style: none;
+  transform-origin: 0% 0%;
+  transform: translate(-140%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.link-menu li {
+  padding: 3px 0 3px 3px;
+}
+
+.navbar-link li:hover {
+  background-color: rgba(254, 172, 0, 0.3);
+}
+
+.ham-menu input:checked ~ ul {
+  transform: scale(1.0, 1.0);
+  opacity: 1;
+}

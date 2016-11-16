@@ -4,20 +4,27 @@
 @import './lib/_theme.scss';
 @import './lib/_fonts.scss';
 @import './lib/_layout.scss';
+@import './lib/_hamburger.scss';
 
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
+}
+
+body {
   background-color: $bg-primary-color;
   background-image: url('../lib/images/golf-green-ball.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
-  color: $bg-secondary-color;
+  position: absolute;
 }
 
 nav {
-  background-color: $nav-bg-primary-color;
+  width: 100%;
+  margin: 15px 0 0 0;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 1064px) {
