@@ -10,21 +10,12 @@ html, body {
   height: 100%;
   margin: 0;
   background-color: $bg-primary-color;
+  background-image: url('../lib/images/golf-green-ball.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
   color: $bg-secondary-color;
 }
 
 nav {
-  // background-color: $nav-bg-primary-color;
-}
-
-.navbar-link {
-  color: $nav-font-primary-color;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.navbar-link:hover {
-  color: $link-primary-color-hover;
-  font-weight: bold;
-  text-decoration: none;
+  background-color: $nav-bg-primary-color;
 }
