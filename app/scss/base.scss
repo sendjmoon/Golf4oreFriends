@@ -1,3 +1,6 @@
+@import './vendor/bootstrap/css/bootstrap.css';
+@import './vendor/font-awesome/scss/font-awesome.scss';
+
 @import './lib/_theme.scss';
 @import './lib/_fonts.scss';
 @import './lib/_layout.scss';
@@ -11,5 +14,17 @@ html, body {
 }
 
 nav {
-  background-color: $nav-bg-primary-color;
+  // background-color: $nav-bg-primary-color;
+}
+
+.navbar-link {
+  color: $nav-font-primary-color;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: $link-primary-color-hover;
+  font-weight: bold;
+  text-decoration: none;
 }

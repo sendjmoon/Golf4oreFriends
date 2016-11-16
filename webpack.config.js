@@ -42,6 +42,10 @@ module.exports = {
         test: /\.html$/,
         loader: 'html',
         exclude: '/node_modules'
+      },
+      {
+        test: /\.(woff|svg|eot|ttf).*/,
+        loader: 'url?limit=10000&name=font/[name].[ext]'
       }
     ]
   }
