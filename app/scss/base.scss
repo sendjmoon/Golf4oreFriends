@@ -1,3 +1,6 @@
+@import './vendor/bootstrap/css/bootstrap.css';
+@import './vendor/font-awesome/scss/font-awesome.scss';
+
 @import './lib/_theme.scss';
 @import './lib/_fonts.scss';
 @import './lib/_layout.scss';
@@ -7,9 +10,18 @@ html, body {
   height: 100%;
   margin: 0;
   background-color: $bg-primary-color;
+  background-image: url('../lib/images/golf-green-ball.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
   color: $bg-secondary-color;
 }
 
 nav {
   background-color: $nav-bg-primary-color;
+}
+
+@media (max-width: 1064px) {
+  html, body {
+    background-size: 1064px;
+  }
 }
