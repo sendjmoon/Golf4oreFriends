@@ -37,3 +37,49 @@
   color: orange;
   font-weight: bold;
 }
+
+.leader-ticker-name, .leader-ticker-score, .leader-ticker-course, .leader-ticker-date {
+  color: black;
+  display: block;
+}
+
+.leader-ticker-name {
+  color: $nav-bg-secondary-color;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.leader-ticker-position {
+  color: #ffffff;
+  font-size: 9px;
+}
+
+.leader-ticker-score {
+  height: 30px;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leader-ticker-handicap {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.leader-ticker-course, .leader-ticker-date {
+  font-size: 12px;
+}
+
+.title-header {
+  height: 100%;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
