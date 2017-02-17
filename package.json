@@ -4,6 +4,7 @@
   "description": "A website allowing friends to log golf scores and view how friends are doing.",
   "main": "webpack.config.js",
   "scripts": {
+    "heroku-postbuild": "./node_modules/webpack/bin/webpack.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot"
   },
